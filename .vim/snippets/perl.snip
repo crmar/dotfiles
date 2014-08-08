@@ -1,0 +1,44 @@
+snippet perl
+        #!/usr/bin/env perl
+
+    use strict;
+        use warnings;
+        use utf8;
+
+    ${1}
+
+snippet pro
+        #!/usr/bin/env perl
+
+    use strict;
+        use warnings;
+
+    chomp(my $line = <>);
+        my ($a, $b) = split ' ', $line;
+            print "$b $a\n";
+
+snippet pri
+        print "${1}\n";
+
+snippet udd
+        use Data::Dumper;
+            print Dumper $${1};
+
+snippet pd
+        print Dumper $${1};
+
+snippet emp
+        print "################\n";
+
+snippet sub
+        sub ${1:#:function_name} {
+                my ($${2}, $${3}) = @_;
+                        ${3:TARGET}
+                        return;
+                            }
+
+snippet fore
+        for my $${1} (${2:#:expression}) {
+                ${3:TARGET}
+        }
+

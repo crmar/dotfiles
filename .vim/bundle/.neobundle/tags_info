@@ -1,4 +1,9 @@
 ctrlp.vim
 neobundle.vim
+neocomplete
+neosnippet
+neosnippet-snippets
 nerdtree
 syntastic
+vim-powerline
+vim-quickrun
