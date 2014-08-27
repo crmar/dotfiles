@@ -5,6 +5,20 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+# Source
+if [ -f ~/.git-completion.bash ]; then
+    source ~/.git-completion.bash
+fi
+
+if [ -f ~/.git-prompt.sh ]; then
+    source ~/.git-prompt.sh
+fi
+
+GIT_PS1_SHOWDIRTYSTATE=true
+GIT_PS1_SHOWUNTRACKEDFILES=true
+GIT_PS1_SHOWSTASHSTATE=true
+GIT_PS1_SHOWUPSTREAM=auto
+
 # User specific aliases and functions
 alias rm='rm -i'
 alias mv='mv -i'
@@ -18,16 +32,8 @@ alias tree='tree -CF'
 alias vi='vim'
 alias evi='vim ~/.vimrc'
 alias pd='perldoc'
+alias gs='git status'
+alias gd='git diff'
+alias gl='git log'
+alias gls='git log --stat'
 
-#export DBD_MYSQL_CFLAGS=-I/usr/local/mysql/include/mysql
-#export DBD_MYSQL_LIBS="-L/usr/local/mysql/lib/mysql -lmysqlclient"
-#export DBD_MYSQL_EMBEDDED=
-#export DBD_MYSQL_CONFIG=mysql_config
-#export DBD_MYSQL_NOCATCHSTDERR=0
-#export DBD_MYSQL_NOFOUNDROWS=0
-#export DBD_MYSQL_SSL=
-#export DBD_MYSQL_TESTDB=test
-#export DBD_MYSQL_TESTHOST=localhost
-#export DBD_MYSQL_TESTPASSWORD="root"
-#export DBD_MYSQL_TESTPORT=3306
-#export DBD_MYSQL_TESTUSER=root

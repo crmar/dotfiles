@@ -91,6 +91,14 @@ inoremap <expr><C-n> pumvisible() ? "\<C-n>" : "\<C-x>\<C-o>\<Down>"
 " vim-powerline setting
 let g:Powerline_symbols = 'fancy'
 
+" syntastic setting
+let g:syntastic_enable_perl_checker = 1
+let g:syntastic_perl_checkers = ['perl', 'podchecker']
+" let g:syntastic_debug = 1
+" let g:syntastic_mode_map = { 'mode': 'active',
+"     \ 'active_filetypes': ['perl'],
+"     \ 'passive_filetypes': [] }
+
 "ctags用キーバインド
 nnoremap t  <Nop>
 nnoremap tt  <C-]>           「飛ぶ」

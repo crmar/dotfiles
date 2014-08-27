@@ -1,9 +1,8 @@
 #!/bin/sh
 
-ln -s ~/dotfiles/.vimrc ~/.vimrc
-ln -s ~/dotfiles/.vim ~/.vim
-ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
-ln -s ~/dotfiles/.bash_profile ~/.bash_profile
-ln -s ~/dotfiles/.bashrc ~/.bashrc
-ln -s ~/dotfiles/.gitconfig ~/.gitconfig
+ln -s -b -S .bak ~/dotfiles/.vimrc ~/.vimrc
+ln -s -b -S .bak ~/dotfiles/.vim ~/.vim
+ln -s -b -S .bak ~/dotfiles/.tmux.conf ~/.tmux.conf
+ln -s -b -S .bak ~/dotfiles/.bash_profile ~/.bash_profile
+ln -s -b -S .bak ~/dotfiles/.bashrc ~/.bashrc
 
