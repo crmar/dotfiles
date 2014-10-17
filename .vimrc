@@ -111,4 +111,11 @@ augroup filetypedetect
     autocmd! BufNewFile,BufRead *.t setf perl
     autocmd! BufNewFile,BufRead *.psgi setf perl
     autocmd! BufNewFile,BufRead *.tt setf html
+    autocmd! BufNewFile,BufRead *.md setf markdown
 augroup END
+
+" encoding
+set fileencodings=utf-8,iso-2022-jp-3,iso-2022-jp,enc-jisx0213,euc-jp,ucs-bom,eucjp-ms,cp932
+
+" 前回のカーソル位置から再開
+autocmd BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g`\"" | endif
